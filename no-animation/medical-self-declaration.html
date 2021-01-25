@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Insuredoo - Medical Self Declaration</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/css/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/fancybox/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2-bootstrap4.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/tooltipster.bundle.min.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#" class="need-help-btn wow fadeInRight" data-wow-duration="1.4s"><i class="fa fa-envelope-o"></i> Need help?</a>
+
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+        <div class="container-fluid">
+            <nav class="main-nav float-left d-none d-lg-block">
+                <ul>
+                    <li><a href="about-insuredoo.html">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#claim">Claim</a></li>
+                    <li class="d-lg-none"><a href="index.html">Insuredoo Jobs</a></li>
+                    <li class="d-lg-none"><a href="index.html">English</a></li>
+                </ul>
+            </nav>
+            <!-- .main-nav -->
+
+            <div class="logo float-left d-lg-block">
+                <h1 class="text-center"><a href="index.html" class="scrollto"><img src="img/logo.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid"></a></h1>
+            </div>
+            <div id="topbar" class="float-right d-lg-block">
+                <div class="right-menu">
+                    <div class="right-menu-main-div login">
+                        <p class="btn">Login </p>
+                        <div class="login_box_container">
+                            <div class="arrow-up"></div>
+                            <div class="loginformholder">
+                                <form action="index.html" method="post">
+                                    <p>
+                                        <label for="email_txt">Email</label>
+                                        <input type="email" placeholder="example@example.com" name="email_txt" id="email_txt" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                                    </p>
+                                    <p>
+                                        <label for="password_txt">Password</label>
+                                        <input type="password" name="password_txt" id="password_txt" autocomplete="new-password" data-validation="required" data-validation-error-msg="Please enter your valid password" />
+                                    </p>
+                                    <input type="submit" value="Login" />
+                                </form>
+                                <div class="other_links"> <a href="#" class="forgot_my_password">Forgot my password</a> <a href="#" class="sign_up">Sign up</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-menu-main-div language d-none d-lg-block"><a href="index.html">E</a></div>
+                    <div class="right-menu-main-div insuredoo-works-logo d-none d-lg-block"><a href="index.html"><img src="img/insuredoo-works-logo.png" alt="insuredoo jobs" class="img-fluid"></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <main id="medical_insurance">
+
+        <!--==========================
+     Insurance Intro Section
+    ============================-->
+        <section id="medical_insurance_intro" class="clearfix main_section">
+            <div class="container">
+                <header class="inner-page-section-header text-center">
+                    <h2>GET MEDICAL INSURANCE QUOTE</h2>
+                    <h4 class="mt-4">Declaration</h4>
+                    <p class="purple-text-color">Please note that you must answer all questions, and answer them truthfully.<br>
+                        Failure to do so may result in your policy being cancelled without notice.</p>
+                </header>
+            </div>
+        </section>
+        <!-- #medical_insurance_intro -->
+
+        <!--==========================
+     Insurance Form Section
+    ============================-->
+        <section id="medical_insurance_form" class="clearfix">
+            <div class="container">
+                <div class="row row-content mb-5">
+                    <div class="col-lg-2 d-none d-lg-block"></div>
+                    <div class="col-xl-8 col-lg-8 col-md-8 main-content declaration-container">
+                        <form action="medical-self-quotes.html" method="post" id="medical_form">
+                            <div class="w-100 mb-4" id="member_1_declaration">
+                                <div class="row mb-4">
+                                    <div class="col-12">
+                                        Have you ever been diagnosed or received any treatment (including hospital or surgery) or felt any disorder or pain or had any symptoms indicating:</div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Diseases of the cardiovascular system incl. hypertension</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[0].value" id="members[0].answers[0].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[0].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[0].value" id="members[0].answers[0].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[0].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Diseases of the respiratory system</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[1].value" id="members[0].answers[1].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[1].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[1].value" id="members[0].answers[1].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[1].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Diseases of digestive system</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[2].value" id="members[0].answers[2].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[2].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[2].value" id="members[0].answers[2].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[2].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Diseases of genitourinary system, kidney diseases and breast disorders</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[3].value" id="members[0].answers[3].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[3].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[3].value" id="members[0].answers[3].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[3].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Osteoarticular & Muscular Diseases or Transplants or Disease of the skin and subcutaneous tissue</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[4].value" id="members[0].answers[4].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[4].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[4].value" id="members[0].answers[4].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[4].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Diseases of the nervous system and sense organs (ears, eyes, nose)</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[5].value" id="members[0].answers[5].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[5].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[5].value" id="members[0].answers[5].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[5].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Diseases of the endocrine system, nutritional-, metabolic diseases and immunity disorders, diabetes</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[6].value" id="members[0].answers[6].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[6].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[6].value" id="members[0].answers[6].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[6].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Neoplasms/Cancer (benign or malignant)</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[7].value" id="members[0].answers[7].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[7].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[7].value" id="members[0].answers[7].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[7].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Sexually Transmitted Diseases & AIDs</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[8].value" id="members[0].answers[8].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[8].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[8].value" id="members[0].answers[8].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[8].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Congenital anomalies, hereditary/genetic diseases</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[9].value" id="members[0].answers[9].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[9].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[9].value" id="members[0].answers[9].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[9].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Other Diseases, Accidents, Previous or Future operations you already know about</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[10].value" id="members[0].answers[10].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[10].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[10].value" id="members[0].answers[10].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[10].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Is the adherent following or has ever followed any medical treatment? Did or is he taking medication?</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[11].value" id="members[0].answers[11].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[11].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[11].value" id="members[0].answers[11].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[11].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Does the adherent have any allergy against any Drug, Food or other?</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[12].value" id="members[0].answers[12].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[12].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[12].value" id="members[0].answers[12].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[12].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Pregnant or trying to get pregnant, or any previous complications in pregnancy, childbirth or abortion</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[13].value" id="members[0].answers[13].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[13].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[13].value" id="members[0].answers[13].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[13].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Infectious and parasitic diseases</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[14].value" id="members[0].answers[14].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[14].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[14].value" id="members[0].answers[14].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[14].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Diseases of blood and blood forming organs</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[15].value" id="members[0].answers[15].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[15].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[15].value" id="members[0].answers[15].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[15].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Mental-/psychiatric disorders</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[16].value" id="members[0].answers[16].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[16].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[16].value" id="members[0].answers[16].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[16].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Diseases of the musculoskeletal system and connective tissue</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[17].value" id="members[0].answers[17].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[17].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[17].value" id="members[0].answers[17].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[17].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Certain conditions originating in the perinatal period</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[18].value" id="members[0].answers[18].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[18].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[18].value" id="members[0].answers[18].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[18].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Injury and poisoning</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[19].value" id="members[0].answers[19].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[19].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[19].value" id="members[0].answers[19].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[19].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Previous medical/surgical hospitalisations, procedures and operations</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[20].value" id="members[0].answers[20].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[20].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[20].value" id="members[0].answers[20].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[20].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Any (chronic) disease(s), symptoms and complaints not mentioned above</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[21].value" id="members[0].answers[21].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[21].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[21].value" id="members[0].answers[21].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[21].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3 pb-3 declaration-row align-items-center">
+                                    <div class="col-8">Any Pre-existing disease(s), symptoms and complaints within the last ten years</div>
+                                    <div class="col-4">
+                                        <div class="button-wrap">
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[22].value" id="members[0].answers[22].yes" value="yes" />
+                                            <label class="button-label" for="members[0].answers[22].yes">
+                                                <p>Yes</p>
+                                            </label>
+                                            <input class="hidden radio-label" type="radio" name="members[0].answers[22].value" id="members[0].answers[22].no" value="no" checked="checked" />
+                                            <label class="button-label" for="members[0].answers[22].no">
+                                                <p>No</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="w-100">
+                                <div class="row mb-4">
+                                    <div class="col-12 text-justify small">
+                                        I hereby declare and agree, with respect to both, myself and to my <strong>Dependants</strong>, that I am aware of the general terms of this insurance and I accept them. With the above, I authorise my doctor, health institution or other organisation or person that has any information about my health and/or activities (and those of my Dependants) to provide the <strong>Insurer</strong> with the said information. This shall include hospital and any other records pertaining to medical advice, diagnosis, treatment or disturbances. A photocopy of this authorisation has the same validity as the original.
+                                        <br><br>
+                                        I understand and acknowledge any <strong>pregnancy</strong> not declared at the time of this application’s coverage will be at the sole discretion of the insurer. The insurer has the right to not cover any maternity claims to any <strong>undeclared pregnancy</strong>. I also acknowledge and understand that for any pregnancy, which arises within forty calendar days from the date of this application; coverage will also be at the discretion of the insurer.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="w-100">
+                                <div class="row mb-4">
+                                    <div class="col-12 text-center"><input type="submit" name="submit_insurance_data_form" id="submit_insurance_data_form" value="I Agree, Get Quotes!" class="btn submit-btn"></div>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block"></div>
+                </div>
+            </div>
+        </section>
+        <!-- #medical_insurance_form -->
+
+    </main>
+    <!-- #medical_insurance -->
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer" class="section-bg">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-newsletter">
+                            <h2 class="pb-3">NEWSLETTER</h2>
+                            <form action="index.html" method="post" class="newsletterForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="newsletter_name" name="newsletter_name" placeholder="Your Name" data-validation="required length alphanumeric" data-validation-length="3-16" data-validation-error-msg="Please enter your name" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="newsletter_email" id="newsletter_email" placeholder="Your Email" data-rule="email" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                <input type="submit" class="form-control" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-info"> <img src="img/logo_white.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid">
+                            <p>Why I say old chap that is sping lavatory chip shop gosh off his, smashing boot are you taking the piss posh loo brilliant matie boy young.!!</p>
+                        </div>
+                        <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_links_separator">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="motor.html">Motor Insurance</a></li>
+                                <li><a href="home.html">Property Insurance</a></li>
+                                <li><a href="index.html">Medical Insurance</a></li>
+                                <li><a href="travel.html">Travel Insurance</a></li>
+                                <li><a href="index.html">Mobile Insurance</a></li>
+                                <li><a href="life.html">Life Insurance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_links_separator">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="index.html">Pet Insurance</a></li>
+                                <li><a href="index.html">GAP Insurance</a></li>
+                                <li><a href="index.html">Blogs</a></li>
+                                <li><a href="index.html">Claims</a></li>
+                                <li><a href="index.html">About Insuredoo</a></li>
+                                <li><a href="index.html">Privacy Policy</a></li>
+                                <li><a href="index.html">Terms of Service</a></li>
+                                <li><a href="index.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="speech-bubble">
+                            <div class="owl-carousel twitter-carousel">
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright"> &copy; Copyright 2020 Insuredoo </div>
+        </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/js/jquery.min.js"></script>
+    <script src="lib/jquery/js/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/js/easing.min.js"></script>
+    <script src="lib/mobile-nav/js/mobile-nav.js"></script>
+    <script src="lib/wow/js/wow.min.js"></script>
+    <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="lib/fancybox/js/jquery.fancybox.min.js"></script>
+    <script src="lib/validation/js/jquery.form-validator.min.js"></script>
+    <script src="lib/form/js/select2.min.js"></script>
+    <script src="lib/tooltip/js/tooltipster.bundle.min.js"></script>
+    <script src="lib/country-selector/js/jquery.countrySelector.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

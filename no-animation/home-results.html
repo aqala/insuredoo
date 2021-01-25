@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Insuredoo - Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/css/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/fancybox/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2-bootstrap4.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/tooltipster.bundle.min.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" rel="stylesheet" />
+    <link href="lib/data-table/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#" class="need-help-btn wow fadeInRight" data-wow-duration="1.4s"><i class="fa fa-envelope-o"></i> Need help?</a>
+
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+        <div class="container-fluid">
+            <nav class="main-nav float-left d-none d-lg-block">
+                <ul>
+                    <li><a href="about-insuredoo.html">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#claim">Claim</a></li>
+                    <li class="d-lg-none"><a href="index.html">Insuredoo Jobs</a></li>
+                    <li class="d-lg-none"><a href="index.html">English</a></li>
+                </ul>
+            </nav>
+            <!-- .main-nav -->
+
+            <div class="logo float-left d-lg-block">
+                <h1 class="text-center"><a href="index.html" class="scrollto"><img src="img/logo.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid"></a></h1>
+            </div>
+            <div id="topbar" class="float-right d-lg-block">
+                <div class="right-menu">
+                    <div class="right-menu-main-div login">
+                        <p class="btn">Login </p>
+                        <div class="login_box_container">
+                            <div class="arrow-up"></div>
+                            <div class="loginformholder">
+                                <form action="index.html" method="post">
+                                    <p>
+                                        <label for="email_txt">Email</label>
+                                        <input type="email" placeholder="example@example.com" name="email_txt" id="email_txt" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                                    </p>
+                                    <p>
+                                        <label for="password_txt">Password</label>
+                                        <input type="password" name="password_txt" id="password_txt" autocomplete="new-password" data-validation="required" data-validation-error-msg="Please enter your valid password" />
+                                    </p>
+                                    <input type="submit" value="Login" />
+                                </form>
+                                <div class="other_links"> <a href="#" class="forgot_my_password">Forgot my password</a> <a href="#" class="sign_up">Sign up</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-menu-main-div language d-none d-lg-block"><a href="index.html">E</a></div>
+                    <div class="right-menu-main-div insuredoo-works-logo d-none d-lg-block"><a href="index.html"><img src="img/insuredoo-works-logo.png" alt="insuredoo jobs" class="img-fluid"></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <main id="home_insurance">
+
+        <!--==========================
+     Insurance Intro Section
+    ============================-->
+        <section id="home_insurance_intro" class="clearfix main_section">
+            <div class="container">
+                <header class="inner-page-section-header text-center">
+                    <h2>GET PROPERTY INSURANCE QUOTE</h2>
+                </header>
+            </div>
+        </section>
+        <!-- #motor_insurance_intro -->
+
+        <!--==========================
+     Insurance Result Section
+    ============================-->
+        <section id="home_insurance_result" class="clearfix">
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col-xl-12 col-lg-12 col-md-12 main-content mb-5">
+                        <p class="hint-text">* The prices you see here are exclusive of 5% VAT</p>
+
+                        <table class="table table-sm property-results-table" cellspacing="0" width="100%" id="property-results-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-sm text-center help-sign no-sort">INSURANCE PROVIDER</th>
+                                    <th class="th-sm text-center help-sign" title="This is how much you will have to pay towards the cost of replacing your items in the case of a claim.">CONTENTS EXCESS <i class="help-sign fa fa-question-circle"></i></th>
+                                    <th class="th-sm text-center help-sign d-none d-md-table-cell" title="This covers damage to items which don’t generally leave the house.<br>e.g. Tv, Fridge, Furniture.">ICONTENTS COVER <i class="help-sign fa fa-question-circle"></i></th>
+                                    <th class="th-sm text-center help-sign d-none d-md-table-cell" title="This ensures that the landlord will still receive income in the event of the property becoming uninhabitable.<br>e.g. In the case of a fire or flood.">ALTERNATIVE ACCOMMODATION <i class="help-sign fa fa-question-circle"></i></th>
+                                    <th class="th-sm text-center help-sign d-none d-md-table-cell" title="This covers damage to items that you regularly use and take out of the property.<br>e.g. Phones, Wallets, Golf Clubs, Watches.">BELONGINGS COVER <i class="help-sign fa fa-question-circle"></i></th>
+                                    <th class="th-sm text-center help-sign" title="This covers bodily injury and property damage sustained by others for which you or your family members are legally responsible.">PERSONAL LIABILITY COVER <i class="help-sign fa fa-question-circle"></i></th>
+                                    <th class="th-sm text-center">POLICY PRICE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/company-logo-1.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Gold</p>
+                                    </td>
+                                    <td class="">AED 250.00</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="60,000">AED 60,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="12,000">AED 12,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="3,000">AED 3,000</td>
+                                    <td class="hightlighted-text" data-order="1,000,000">AED 1,000,000</td>
+                                    <td class="text-center" data-order="450">
+                                        <form action="checkout.html" method="post" id="property_form_1">
+                                            <button type="submit" class="btn">Buy Now<br>AED 450</button><br><a href="property-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/partner_logo_1.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Basic</p>
+                                    </td>
+                                    <td class="">AED 250.00</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="30,000">AED 30,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="6,000">AED 6,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="3,000">AED 3,000</td>
+                                    <td class="hightlighted-text" data-order="250,000">AED 250,000</td>
+                                    <td class="text-center" data-order="230">
+                                        <form action="checkout.html" method="post" id="property_form_2">
+                                            <button type="submit" class="btn">Buy Now<br>AED 230</button><br><a href="property-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/partner_logo_2.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Basic</p>
+                                    </td>
+                                    <td class="">AED 500.00</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="250,000">AED 250,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="125,000">AED 125,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="50,000">AED 50,000</td>
+                                    <td class="hightlighted-text" data-order="500,000">AED 500,000</td>
+                                    <td class="text-center" data-order="700">
+                                        <form action="checkout.html" method="post" id="property_form_3">
+                                            <button type="submit" class="btn">Buy Now<br>AED 700</button><br><a href="property-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/partner_logo_1.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Premium</p>
+                                    </td>
+                                    <td class="">AED 400.00</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="150,000">AED 150,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="75,000">AED 75,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="30,000">AED 30,000</td>
+                                    <td class="hightlighted-text" data-order="1,000,000">AED 1,000,000</td>
+                                    <td class="text-center" data-order="610">
+                                        <form action="checkout.html" method="post" id="property_form_4">
+                                            <button type="submit" class="btn">Buy Now<br>AED 610</button><br><a href="property-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/partner_logo_1.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Platinum</p>
+                                    </td>
+                                    <td class="">AED 350.00</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="75,000">AED 75,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="37,000">AED 37,500</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="18,000">AED 18,000</td>
+                                    <td class="hightlighted-text" data-order="1,000,000">AED 1,000,000</td>
+                                    <td class="text-center" data-order="80">
+                                        <form action="checkout.html" method="post" id="property_form_5">
+                                            <button type="submit" class="btn">Buy Now<br>AED 80</button><br><a href="property-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/partner_logo_2.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Platinum</p>
+                                    </td>
+                                    <td class="">AED 500.00</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="40,000">AED 40,000</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="37,500">AED 37,500</td>
+                                    <td class="d-none d-md-table-cell hightlighted-text" data-order="15,000">AED 15,000</td>
+                                    <td class="hightlighted-text" data-order="1,000,000">AED 1,000,000</td>
+                                    <td class="text-center" data-order="420">
+                                        <form action="checkout.html" method="post" id="property_form_6">
+                                            <button type="submit" class="btn">Buy Now<br>AED 420</button><br><a href="property-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+
+                            </tbody>
+                        </table>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #home_insurance_result -->
+
+
+
+
+
+    </main>
+    <!-- #life_insurance -->
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer" class="section-bg">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-newsletter">
+                            <h2 class="pb-3">NEWSLETTER</h2>
+                            <form action="index.html" method="post" class="newsletterForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="newsletter_name" name="newsletter_name" placeholder="Your Name" data-validation="required length alphanumeric" data-validation-length="3-16" data-validation-error-msg="Please enter your name" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="newsletter_email" id="newsletter_email" placeholder="Your Email" data-rule="email" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                <input type="submit" class="form-control" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-info"> <img src="img/logo_white.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid">
+                            <p>Why I say old chap that is sping lavatory chip shop gosh off his, smashing boot are you taking the piss posh loo brilliant matie boy young.!!</p>
+                        </div>
+                        <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_links_separator">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="motor.html">Motor Insurance</a></li>
+                                <li><a href="home.html">Property Insurance</a></li>
+                                <li><a href="index.html">Medical Insurance</a></li>
+                                <li><a href="travel.html">Travel Insurance</a></li>
+                                <li><a href="index.html">Mobile Insurance</a></li>
+                                <li><a href="life.html">Life Insurance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_links_separator">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="index.html">Pet Insurance</a></li>
+                                <li><a href="index.html">GAP Insurance</a></li>
+                                <li><a href="index.html">Blogs</a></li>
+                                <li><a href="index.html">Claims</a></li>
+                                <li><a href="index.html">About Insuredoo</a></li>
+                                <li><a href="index.html">Privacy Policy</a></li>
+                                <li><a href="index.html">Terms of Service</a></li>
+                                <li><a href="index.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="speech-bubble">
+                            <div class="owl-carousel twitter-carousel">
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright"> &copy; Copyright 2020 Insuredoo </div>
+        </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/js/jquery.min.js"></script>
+    <script src="lib/jquery/js/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/js/easing.min.js"></script>
+    <script src="lib/mobile-nav/js/mobile-nav.js"></script>
+    <script src="lib/wow/js/wow.min.js"></script>
+    <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="lib/fancybox/js/jquery.fancybox.min.js"></script>
+    <script src="lib/validation/js/jquery.form-validator.min.js"></script>
+    <script src="lib/form/js/select2.min.js"></script>
+    <script src="lib/tooltip/js/tooltipster.bundle.min.js"></script>
+    <script src="lib/data-table/js/jquery.dataTables.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

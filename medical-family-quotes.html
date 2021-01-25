@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Insuredoo - Medical Insurance</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/css/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/fancybox/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2-bootstrap4.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/tooltipster.bundle.min.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" rel="stylesheet" />
+    <link href="lib/data-table/css/jquery.dataTables.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#" class="need-help-btn wow fadeInRight" data-wow-duration="1.4s"><i class="fa fa-envelope-o"></i> Need help?</a>
+
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+        <div class="container-fluid">
+            <nav class="main-nav float-left d-none d-lg-block">
+                <ul>
+                    <li><a href="about-insuredoo.html">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#claim">Claim</a></li>
+                    <li class="d-lg-none"><a href="index.html">Insuredoo Jobs</a></li>
+                    <li class="d-lg-none"><a href="index.html">English</a></li>
+                </ul>
+            </nav>
+            <!-- .main-nav -->
+
+            <div class="logo float-left d-lg-block">
+                <h1 class="text-center"><a href="index.html" class="scrollto"><img src="img/logo.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid"></a></h1>
+            </div>
+            <div id="topbar" class="float-right d-lg-block">
+                <div class="right-menu">
+                    <div class="right-menu-main-div login">
+                        <p class="btn">Login </p>
+                        <div class="login_box_container">
+                            <div class="arrow-up"></div>
+                            <div class="loginformholder">
+                                <form action="index.html" method="post">
+                                    <p>
+                                        <label for="email_txt">Email</label>
+                                        <input type="email" placeholder="example@example.com" name="email_txt" id="email_txt" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                                    </p>
+                                    <p>
+                                        <label for="password_txt">Password</label>
+                                        <input type="password" name="password_txt" id="password_txt" autocomplete="new-password" data-validation="required" data-validation-error-msg="Please enter your valid password" />
+                                    </p>
+                                    <input type="submit" value="Login" />
+                                </form>
+                                <div class="other_links"> <a href="#" class="forgot_my_password">Forgot my password</a> <a href="#" class="sign_up">Sign up</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-menu-main-div language d-none d-lg-block"><a href="index.html">E</a></div>
+                    <div class="right-menu-main-div insuredoo-works-logo d-none d-lg-block"><a href="index.html"><img src="img/insuredoo-works-logo.png" alt="insuredoo jobs" class="img-fluid"></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <main id="medical_insurance">
+
+        <!--==========================
+     Insurance Intro Section
+    ============================-->
+        <section id="medical_insurance_intro" class="clearfix main_section">
+            <div class="container">
+                <header class="inner-page-section-header text-center">
+                    <h2>GET MEDICAL INSURANCE QUOTE</h2>
+                </header>
+            </div>
+        </section>
+        <!-- #medical_insurance_intro -->
+
+        <!--==========================
+     Insurance Result Section
+    ============================-->
+        <section id="medical_insurance_result" class="clearfix">
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col-xl-12 col-lg-12 col-md-12 main-content mb-5">
+                        <p class="hint-text">* The prices you see here are exclusive of 5% VAT</p>
+
+                        <table class="table table-sm medical-results-table" cellspacing="0" width="100%" id="medical-results-table">
+                            <thead>
+                                <tr>
+                                    <th class="th-sm text-center help-sign no-sort">INSURANCE PROVIDER</th>
+                                    <th class="th-sm text-center help-sign" title="This is what you’ll pay your health provider when claiming with this policy."><i class="help-sign fa fa-question-circle"></i><br>DEDUCTIBLES</th>
+                                    <th class="th-sm text-center help-sign" title="This is the maximum amount (in AED) that you can claim with this policy."><i class="help-sign fa fa-question-circle"></i><br>ANNUAL COVERAGE</th>
+                                    <th class="th-sm text-center help-sign d-none d-md-table-cell" title="Where this policy is applicable."><i class="help-sign fa fa-question-circle"></i><br>COVERAGE</th>
+                                    <th class="th-sm text-center help-sign d-none d-md-table-cell" title="If this is included in your policy, it’ll allow you to claim back the shown amount for maternity-related medical expenses."><i class="help-sign fa fa-question-circle"></i><br>MATERNITY</th>
+                                    <th class="th-sm text-center help-sign d-none d-md-table-cell" title="The list of hospitals and clinics where your health insurance plan can be applied. Some plans may provide some benefits for out-of-network clinics and hospitals, too."><i class="help-sign fa fa-question-circle"></i><br>NETWORKS</th>
+                                    <th class="th-sm text-center help-sign" title="Helps with the cost of buying prescription medicines. This can be a portion of the price or sometimes the full amount."><i class="help-sign fa fa-question-circle"></i><br>PHARMACEUTICALS</th>
+                                    <th class="th-sm text-center">TOTAL PRICE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_1.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">20% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="5183">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_1">
+                                            <small>5% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 5,456</del><br>AED 5,183</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_1.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50 + 20% copay*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Hospitals 11 Clinics 432</td>
+                                    <td class="text-center" data-order="1">20% copay on OP pharmacy</td>
+                                    <td class="text-center" data-order="5290">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_2">
+                                            <small>5% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 5,568</del><br>AED 5,290</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_2.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">10% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="5461">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_3">
+                                            <small>5% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 5,748</del><br>AED 5.461</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_3.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">20% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="5538">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_4">
+                                            <small>5% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 5,676</del><br>AED 5,538</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_1.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1">UAE & Home Country (within ME, SEA & including Indian Sub-continent)</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">20% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="450">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_5">
+                                            <small>10% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 500</del><br>AED 450</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_4.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">20% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="450">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_6">
+                                            <small>10% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 500</del><br>AED 450</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_4.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">20% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="450">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_7">
+                                            <small>10% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 500</del><br>AED 450</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_3.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">20% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="450">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_8">
+                                            <small>10% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 500</del><br>AED 450</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_2.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">20% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="450">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_9">
+                                            <small>10% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 500</del><br>AED 450</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class="insurance-provider-logo text-center"><img src="img/m_logo_2.png" class="mw-150 img-fluid mb-2">
+                                        <p class="package">Family Care Plan - Silver</p>
+                                    </td>
+                                    <td class="text-center help-sign" data-order="20" title="20% co-pay with a maximum of AED 50 deductible on consultation and 20% copay on other Out-Patient Services"><i class="help-sign fa fa-question-circle"></i><br>20% up to Max 50</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1,000,000">1,000,0000</td>
+                                    <td class="text-center d-none d-md-table-cell  help-sign" data-order="1" title="Coverage outside UAE is limited to 90 days per treatment. A single holiday or business trip may not exceed 90 days"><i class="help-sign fa fa-question-circle"></i><br>Worldwide*</td>
+                                    <td class="text-center d-none d-md-table-cell" data-order="1"><img src="img/include_sign.png" class="yes-no-option"></td>
+                                    <td class="text-center" data-order="1">Mednet Silk Road Network*</td>
+                                    <td class="text-center" data-order="1">20% copay on Out-Patient pharmacy</td>
+                                    <td class="text-center" data-order="450">
+                                        <form action="medical-checkout.html" method="post" id="medical_form_10">
+                                            <small>10% discount!</small><br>
+                                            <button type="submit" class="btn">Buy Now<br><del class="discount">AED 500</del><br>AED 450</button><br><a href="medical-details.html" class="more-info-link">More Info</a>
+                                        </form>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #medical_insurance_result -->
+
+    </main>
+    <!-- #medical_insurance -->
+
+
+
+    <div class="modal fade" id="summary_popup" tabindex="-1" role="dialog" aria-labelledby="summary_popup" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Your Quote Details</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <section class="modal-inner-box p-3 m-3">
+                        <div class="row">
+                            <div class="col">
+                                <h4><strong>Health Insurance for:</strong> family</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Your Name</strong> Tariq Humaidi</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Mobile</strong> 0742342342</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Email</strong> tariqhumaidi@hotmail.com</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Visa Emirate</strong> Sharjah</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Salary Above AED 4,000?</strong> true</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Insurance for yourself?</strong> true</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="mb-0 mt-3">Member Summary</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="member-row-modal p-2 d-block">Member 1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Date of Birth</strong> 07 Apr 1981</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Gender</strong> Male</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Salary Above AED 4,000?</strong> true</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Nationality</strong> United States of America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Relationship</strong> I'm the sponsor</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">Declaration <a href="#" class="declaration-view-toggle small" data-toggle="collapse" data-target=".multi-collapse-1" aria-expanded="false" aria-controls="declaration_member_details_1">View <i class="fa fa-arrow-circle-right"></i></a></div>
+                        </div>
+                        <div class="row collapse multi-collapse-1 small" id="declaration_member_details_1">
+                            <div class="col">
+                                <ul>
+                                    <li>Sexually Transmitted Diseases & AIDs<p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of digestive system <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Infectious and parasitic diseases <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of blood and blood forming organs <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the respiratory system <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Congenital anomalies, hereditary/genetic diseases <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Any Pre-existing disease(s), symptoms and complaints within the last ten years <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Certain conditions originating in the perinatal period <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Pregnant or trying to get pregnant, or any previous complications in pregnancy, childbirth or abortion <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the musculoskeletal system and connective tissue <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Is the adherent following or has ever followed any medical treatment? Did or is he taking medication? <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Any (chronic) disease(s), symptoms and complaints not mentioned above <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Other Diseases, Accidents, Previous or Future operations you already know about <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Previous medical/surgical hospitalisations, procedures and operations <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the endocrine system, nutritional-, metabolic diseases and immunity disorders, diabetes <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Does the adherent have any allergy against any Drug, Food or other? <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Injury and poisoning <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Neoplasms/Cancer (benign or malignant) <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the nervous system and sense organs (ears, eyes, nose) <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Mental-/psychiatric disorders <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Osteoarticular & Muscular Diseases or Transplants or Disease of the skin and subcutaneous tissue <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of genitourinary system, kidney diseases and breast disorders <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the cardiovascular system incl. hypertension <p class="declaration_answer">False</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="member-row-modal p-2 d-block">Member 2</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Date of Birth</strong> 02 Jun 2010</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Gender</strong> Female (Single)</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Salary Above AED 4,000?</strong> true</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Nationality</strong> United States of America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Relationship</strong> Child</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">Declaration <a href="#" class="declaration-view-toggle small" data-toggle="collapse" data-target=".multi-collapse-2" aria-expanded="false" aria-controls="declaration_member_details_2">View <i class="fa fa-arrow-circle-right"></i></a></div>
+                        </div>
+                        <div class="row collapse multi-collapse-2 small" id="declaration_member_details_2">
+                            <div class="col">
+                                <ul>
+                                    <li>Sexually Transmitted Diseases & AIDs<p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of digestive system <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Infectious and parasitic diseases <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of blood and blood forming organs <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the respiratory system <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Congenital anomalies, hereditary/genetic diseases <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Any Pre-existing disease(s), symptoms and complaints within the last ten years <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Certain conditions originating in the perinatal period <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Pregnant or trying to get pregnant, or any previous complications in pregnancy, childbirth or abortion <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the musculoskeletal system and connective tissue <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Is the adherent following or has ever followed any medical treatment? Did or is he taking medication? <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Any (chronic) disease(s), symptoms and complaints not mentioned above <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Other Diseases, Accidents, Previous or Future operations you already know about <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Previous medical/surgical hospitalisations, procedures and operations <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the endocrine system, nutritional-, metabolic diseases and immunity disorders, diabetes <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Does the adherent have any allergy against any Drug, Food or other? <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Injury and poisoning <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Neoplasms/Cancer (benign or malignant) <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the nervous system and sense organs (ears, eyes, nose) <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Mental-/psychiatric disorders <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Osteoarticular & Muscular Diseases or Transplants or Disease of the skin and subcutaneous tissue <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of genitourinary system, kidney diseases and breast disorders <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the cardiovascular system incl. hypertension <p class="declaration_answer">False</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="member-row-modal p-2 d-block">Member 3</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Date of Birth</strong> 05 Jun 1987</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Gender</strong> Female (Married)</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Salary Above AED 4,000?</strong> true</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Nationality</strong> United States of America</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12"><strong>Relationship</strong> Spouse</div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">Declaration <a href="#" class="declaration-view-toggle small" data-toggle="collapse" data-target=".multi-collapse-3" aria-expanded="false" aria-controls="declaration_member_details_3">View <i class="fa fa-arrow-circle-right"></i></a></div>
+                        </div>
+                        <div class="row collapse multi-collapse-3 small" id="declaration_member_details_3">
+                            <div class="col">
+                                <ul>
+                                    <li>Sexually Transmitted Diseases & AIDs<p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of digestive system <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Infectious and parasitic diseases <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of blood and blood forming organs <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the respiratory system <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Congenital anomalies, hereditary/genetic diseases <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Any Pre-existing disease(s), symptoms and complaints within the last ten years <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Certain conditions originating in the perinatal period <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Pregnant or trying to get pregnant, or any previous complications in pregnancy, childbirth or abortion <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the musculoskeletal system and connective tissue <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Is the adherent following or has ever followed any medical treatment? Did or is he taking medication? <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Any (chronic) disease(s), symptoms and complaints not mentioned above <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Other Diseases, Accidents, Previous or Future operations you already know about <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Previous medical/surgical hospitalisations, procedures and operations <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the endocrine system, nutritional-, metabolic diseases and immunity disorders, diabetes <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Does the adherent have any allergy against any Drug, Food or other? <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Injury and poisoning <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Neoplasms/Cancer (benign or malignant) <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the nervous system and sense organs (ears, eyes, nose) <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Mental-/psychiatric disorders <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Osteoarticular & Muscular Diseases or Transplants or Disease of the skin and subcutaneous tissue <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of genitourinary system, kidney diseases and breast disorders <p class="declaration_answer">False</p>
+                                    </li>
+                                    <li>Diseases of the cardiovascular system incl. hypertension <p class="declaration_answer">False</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
+                            <h5>Does everything look correct?</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">I want to make change</button>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 close-insurance-modal-btn-container">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">All Good</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer" class="section-bg">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-newsletter">
+                            <h2 class="pb-3">NEWSLETTER</h2>
+                            <form action="index.html" method="post" class="newsletterForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="newsletter_name" name="newsletter_name" placeholder="Your Name" data-validation="required length alphanumeric" data-validation-length="3-16" data-validation-error-msg="Please enter your name" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="newsletter_email" id="newsletter_email" placeholder="Your Email" data-rule="email" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                <input type="submit" class="form-control" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-info"> <img src="img/logo_white.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid">
+                            <p>Why I say old chap that is sping lavatory chip shop gosh off his, smashing boot are you taking the piss posh loo brilliant matie boy young.!!</p>
+                        </div>
+                        <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_links_separator">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="motor.html">Motor Insurance</a></li>
+                                <li><a href="home.html">Property Insurance</a></li>
+                                <li><a href="index.html">Medical Insurance</a></li>
+                                <li><a href="travel.html">Travel Insurance</a></li>
+                                <li><a href="index.html">Mobile Insurance</a></li>
+                                <li><a href="life.html">Life Insurance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_links_separator">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="index.html">Pet Insurance</a></li>
+                                <li><a href="index.html">GAP Insurance</a></li>
+                                <li><a href="index.html">Blogs</a></li>
+                                <li><a href="index.html">Claims</a></li>
+                                <li><a href="index.html">About Insuredoo</a></li>
+                                <li><a href="index.html">Privacy Policy</a></li>
+                                <li><a href="index.html">Terms of Service</a></li>
+                                <li><a href="index.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="speech-bubble">
+                            <div class="owl-carousel twitter-carousel">
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright"> &copy; Copyright 2020 Insuredoo </div>
+        </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/js/jquery.min.js"></script>
+    <script src="lib/jquery/js/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/js/easing.min.js"></script>
+    <script src="lib/mobile-nav/js/mobile-nav.js"></script>
+    <script src="lib/wow/js/wow.min.js"></script>
+    <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="lib/fancybox/js/jquery.fancybox.min.js"></script>
+    <script src="lib/validation/js/jquery.form-validator.min.js"></script>
+    <script src="lib/form/js/select2.min.js"></script>
+    <script src="lib/tooltip/js/tooltipster.bundle.min.js"></script>
+    <script src="lib/data-table/js/jquery.dataTables.min.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

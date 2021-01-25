@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Insuredoo - Medical Self</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/css/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/fancybox/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2-bootstrap4.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/tooltipster.bundle.min.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#" class="need-help-btn wow fadeInRight" data-wow-duration="1.4s"><i class="fa fa-envelope-o"></i> Need help?</a>
+
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+        <div class="container-fluid">
+            <nav class="main-nav float-left d-none d-lg-block">
+                <ul>
+                    <li><a href="about-insuredoo.html">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#claim">Claim</a></li>
+                    <li class="d-lg-none"><a href="index.html">Insuredoo Jobs</a></li>
+                    <li class="d-lg-none"><a href="index.html">English</a></li>
+                </ul>
+            </nav>
+            <!-- .main-nav -->
+
+            <div class="logo float-left d-lg-block">
+                <h1 class="text-center"><a href="index.html" class="scrollto"><img src="img/logo.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid"></a></h1>
+            </div>
+            <div id="topbar" class="float-right d-lg-block">
+                <div class="right-menu">
+                    <div class="right-menu-main-div login">
+                        <p class="btn">Login </p>
+                        <div class="login_box_container">
+                            <div class="arrow-up"></div>
+                            <div class="loginformholder">
+                                <form action="index.html" method="post">
+                                    <p>
+                                        <label for="email_txt">Email</label>
+                                        <input type="email" placeholder="example@example.com" name="email_txt" id="email_txt" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                                    </p>
+                                    <p>
+                                        <label for="password_txt">Password</label>
+                                        <input type="password" name="password_txt" id="password_txt" autocomplete="new-password" data-validation="required" data-validation-error-msg="Please enter your valid password" />
+                                    </p>
+                                    <input type="submit" value="Login" />
+                                </form>
+                                <div class="other_links"> <a href="#" class="forgot_my_password">Forgot my password</a> <a href="#" class="sign_up">Sign up</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-menu-main-div language d-none d-lg-block"><a href="index.html">E</a></div>
+                    <div class="right-menu-main-div insuredoo-works-logo d-none d-lg-block"><a href="index.html"><img src="img/insuredoo-works-logo.png" alt="insuredoo jobs" class="img-fluid"></a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- #header -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <main id="medical_insurance">
+
+        <!--==========================
+     Insurance Intro Section
+    ============================-->
+        <section id="medical_insurance_intro" class="clearfix main_section">
+            <div class="container">
+                <header class="inner-page-section-header text-center">
+                    <h2>GET MEDICAL INSURANCE QUOTE</h2>
+                </header>
+            </div>
+        </section>
+        <!-- #medical_insurance_intro -->
+
+        <!--==========================
+     Insurance Form Section
+    ============================-->
+        <section id="medical_insurance_form" class="clearfix">
+            <div class="container">
+                <div class="row row-content">
+                    <div class="col-lg-2 d-none d-lg-block"></div>
+                    <div class="col-xl-8 col-lg-8 col-md-8 main-content">
+                        <form action="medical-self-declaration.html" method="post" id="medical_form">
+                            <div class="form-group mt-4 mb-4 clearfix">
+                                <label for="full_name">What's your full name?</label>
+                                <input type="text" class="form-control" name="full_name" id="full_name" placeholder="Full Name" data-validation="required" data-validation-allowing="positive" data-validation-error-msg="Please enter your full name">
+                            </div>
+                            <div class="form-group mt-4 mb-4 clearfix">
+                                <label for="source_country_code">Which emirates is your visa issued from?</label>
+                                <select name="city_id" id="city_id" data-validation="required">
+                                    <option value="">---</option>
+                                    <option value="1">Dubai</option>
+                                    <option value="2">Sharjah</option>
+                                    <option value="4">Ajman</option>
+                                    <option value="5">Ras Al Khaimah</option>
+                                    <option value="6">Fujairah</option>
+                                    <option value="7">Umm Al Quwain</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-4 mb-4 clearfix">
+                                <label for="phone_number">What's your phone number?</label>
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">+971</div>
+                                    </div>
+                                    <input type="text" class="form-control" name="phone_number" id="phone_number" placeholder="eg. 521234567" data-validation-length="9" data-validation="required length number" data-validation-allowing="positive" data-validation-error-msg="Please enter valid phone number in 9 digits">
+                                </div>
+                            </div>
+                            <div class="form-group mt-4 mb-4 clearfix">
+                                <label for="email">What's your email address?</label>
+                                <input type="text" class="form-control" name="email" id="email" placeholder="eg. your@email.com" data-validation="required email" data-validation-error-msg="Please enter the valid email">
+                            </div>
+                            <div class="form-group mt-4 mb-4 clearfix">Is your salary more than AED 4,000 per month?
+                                <div class="button-wrap">
+                                    <input class="hidden radio-label no_val" type="radio" name="salary_over_4k" id="salary_over_4k_no" value="no" checked="checked" />
+                                    <label class="button-label" for="salary_over_4k_no">
+                                        <p>No</p>
+                                    </label>
+                                    <input class="hidden radio-label yes_val" type="radio" name="salary_over_4k" id="salary_over_4k_yes" value="yes" />
+                                    <label class="button-label" for="salary_over_4k_yes">
+                                        <p>Yes</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4 mb-4 clearfix">What type of cover are you looking for?
+                                <div class="button-wrap">
+                                    <input class="hidden radio-label first_val" type="radio" name="viewEbp" id="viewEbp_minimum_legal_cover" value="I just want the minimum legal cover" />
+                                    <label class="button-label w-100 text-center" for="viewEbp_minimum_legal_cover">
+                                        <p>I just want the minimum legal cover</p>
+                                    </label>
+                                    <div class="w-100"></div>
+                                    <input class="hidden radio-label second_val" type="radio" name="viewEbp" id="viewEbp_more_than_minimum_cover" value="I want more than just the minimum cover" />
+                                    <label class="button-label w-100 text-center" for="viewEbp_more_than_minimum_cover">
+                                        <p>I want more than just the minimum cover</p>
+                                    </label>
+                                    <div class="w-100"></div>
+                                    <input class="hidden radio-label third_val" type="radio" name="viewEbp" id="viewEbp_show_everything" value="I'm not sure, just show me everything" checked="checked" />
+                                    <label class="button-label w-100 text-center" for="viewEbp_show_everything">
+                                        <p>I'm not sure, just show me everything</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group mt-4 mb-4 clearfix">
+                                <label for="dob">Please select member's date of birth?</label>
+                                <input type="date" class="form-control" name="dob" id="dob" placeholder="YYYY-MM-DD" data-validation="required" data-validation-error-msg="Please enter your date of birth">
+                            </div>
+                            <div class="form-group mt-4 mb-4 clearfix">
+                                <label for="gender">What's your gender?</label>
+                                <select name="gender" id="gender" data-validation="required" data-validation-error-msg="Please select your gender">
+                                    <option value="">---</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female (Married)</option>
+                                    <option value="3">Female (Single)</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-4 mb-4 clearfix">
+                                <label for="destination_country_zone_id">What's your Nationality?</label>
+                                <div id="countries"></div>
+                            </div>
+
+                            <div class="form-group mt-4 mb-4 clearfix text-center">
+                                <input type="submit" name="submit_insurance_data_form" id="submit_insurance_data_form" value="One More Step..." class="btn submit-btn">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block"></div>
+                </div>
+            </div>
+        </section>
+        <!-- #medical_insurance_form -->
+
+        <!--==========================
+      Boxes Section
+    ============================-->
+        <section id="motor_insurance_boxes" class="insurance_boxes">
+            <div class="container">
+                <div class="row flex-items-xs-middle flex-items-xs-center cards_container">
+                    <div class="col-lg-2 d-none d-lg-block"></div>
+                    <div class="col-xs-12 col-lg-4 col-md-6 wow fadeInLeft" data-wow-duration="1s">
+                        <div class="card">
+                            <div class="card-icon"><img src="img/insurance_form_page_icon_1.png" alt="card" class="img-fluid"></div>
+                            <div class="card-block">
+                                <h4 class="card-title"> SHOP AROUND </h4>
+                                <p>You could save a lotwhen you search and compare with Insuredoo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-4 col-md-6 wow fadeInRight" data-wow-duration="1s">
+                        <div class="card">
+                            <div class="card-icon"><img src="img/insurance_form_page_icon_2.png" alt="card" class="img-fluid"></div>
+                            <div class="card-block">
+                                <h4 class="card-title"> PAY INSTALLMENTS </h4>
+                                <p>you can pay yourinsurance in Installments with 0% interest</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-none d-lg-block"></div>
+                </div>
+                <!-- .cards_container -->
+            </div>
+            <!-- .container -->
+
+        </section>
+        <!-- #insurance_boxes -->
+
+    </main>
+    <!-- #medical_insurance -->
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer" class="section-bg">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-newsletter">
+                            <h2 class="pb-3">NEWSLETTER</h2>
+                            <form action="index.html" method="post" class="newsletterForm">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="newsletter_name" name="newsletter_name" placeholder="Your Name" data-validation="required length alphanumeric" data-validation-length="3-16" data-validation-error-msg="Please enter your name" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="newsletter_email" id="newsletter_email" placeholder="Your Email" data-rule="email" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                                    <div class="validation"></div>
+                                </div>
+                                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                <input type="submit" class="form-control" value="Subscribe">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="footer-info"> <img src="img/logo_white.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid">
+                            <p>Why I say old chap that is sping lavatory chip shop gosh off his, smashing boot are you taking the piss posh loo brilliant matie boy young.!!</p>
+                        </div>
+                        <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_links_separator">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="motor.html">Motor Insurance</a></li>
+                                <li><a href="home.html">Property Insurance</a></li>
+                                <li><a href="index.html">Medical Insurance</a></li>
+                                <li><a href="travel.html">Travel Insurance</a></li>
+                                <li><a href="index.html">Mobile Insurance</a></li>
+                                <li><a href="life.html">Life Insurance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer_links_separator">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="index.html">Pet Insurance</a></li>
+                                <li><a href="index.html">GAP Insurance</a></li>
+                                <li><a href="index.html">Blogs</a></li>
+                                <li><a href="index.html">Claims</a></li>
+                                <li><a href="index.html">About Insuredoo</a></li>
+                                <li><a href="index.html">Privacy Policy</a></li>
+                                <li><a href="index.html">Terms of Service</a></li>
+                                <li><a href="index.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="speech-bubble">
+                            <div class="owl-carousel twitter-carousel">
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                                <div class="twitter-item"> BrandtWaldemar An awesome end to a great year. Congrats & happy 2020 <br>
+                                    <span>Unsplash<br>
+                                        January 04, 2020</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright"> &copy; Copyright 2020 Insuredoo </div>
+        </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/js/jquery.min.js"></script>
+    <script src="lib/jquery/js/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/js/easing.min.js"></script>
+    <script src="lib/mobile-nav/js/mobile-nav.js"></script>
+    <script src="lib/wow/js/wow.min.js"></script>
+    <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="lib/fancybox/js/jquery.fancybox.min.js"></script>
+    <script src="lib/validation/js/jquery.form-validator.min.js"></script>
+    <script src="lib/form/js/select2.min.js"></script>
+    <script src="lib/tooltip/js/tooltipster.bundle.min.js"></script>
+    <script src="lib/country-selector/js/jquery.countrySelector.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

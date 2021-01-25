@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Insuredoo - Motor</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="lib/animate/css/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/fancybox/css/jquery.fancybox.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2.min.css" rel="stylesheet" />
+    <link href="lib/form/css/select2-bootstrap4.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/tooltipster.bundle.min.css" rel="stylesheet" />
+    <link href="lib/tooltip/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-light.min.css" rel="stylesheet" />
+
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <a href="#" class="need-help-btn wow fadeInRight" data-wow-duration="1.4s"><i class="fa fa-envelope-o"></i> Need help?</a>
+
+    <!--==========================
+  Header
+  ============================-->
+    <!--==========================
+  Header
+  ============================-->
+    <header id="header">
+      <div class="container-fluid">
+        <nav class="main-nav float-left d-none d-lg-block">
+          <ul>
+            <li><a href="about-insuredoo.html">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+          </ul>
+        </nav>
+        <!-- .main-nav -->
+
+        <div class="logo float-left d-lg-block">
+          <div class="text-center"><a href="index.html" class="scrollto"><img src="img/logo.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid"></a></div>
+        </div>
+        <div id="topbar" class="float-right d-lg-block">
+          <div class="right-menu">
+            <div class="right-menu-main-div login">
+              <p class="btn" data-toggle="modal" data-target="#signin-modal">Login </p>
+            </div>
+            <div class="right-menu-main-div language d-none d-lg-block"><a href="index.html">E</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- #header -->
+     <!--==========================
+    sign in modal
+  ============================-->
+    <div class="modal fade" id="signin-modal" tabindex="-1" role="dialog" aria-labelledby="signin-modal" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <h3 class="primary-color-text">Sign In</h3>
+                <form>
+                  <div class="form-header">
+                    <p>New user? <span class="primary-color-text create-account" data-toggle="modal" data-target="#signup-modal">Create an account</span></p>
+                    <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
+                      <label for="car_value">Username or Email</label>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control" name="username" id="username">
+                      </div>
+                      <div class="validation">Validation message goes here..</div>
+                    </div>
+                    <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
+                      <label for="car_value">Password</label>
+                      <div class="input-group mb-2">
+                        <input type="password" class="form-control" name="password" id="password">
+                        <div class="validation"></div>
+                      </div>
+                    </div>
+                    <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
+                      <label class="checkbox-label with-label" for="roadside_assistance">
+                        <input class="add-to-checkout" type="checkbox" name="roadside_assistance" id="roadside_assistance" value="50" user-data="summary-checkout-amount" />
+                        <span class="checkbox-custom circular"></span> </label>
+                      <span>Keep me signed in</span>
+                    </div>
+                    <input type="submit" class="btn" name="signin" id="signin" value="Sign in">
+                    <div class="social-login d-flex flex-column justify-content-center align-items-center">
+                      <p>Or sign in with</p>
+                      <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 col-md-6 d-none d-lg-block">
+                <img src="img/animation/animation-7.gif" alt="animation" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- #sign in modal -->
+
+    <!--==========================
+    sign up modal
+  ============================-->
+    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-labelledby="signup-modal" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <h3 class="primary-color-text">Sign up</h3>
+                <form>
+                  <div class="form-header">
+                    <div class="form-group mt-2 mb-2 clearfix" data-toggle="tooltipster" data-placement="right" title="We know this question is a pain - but the insurers need it to calculate the price they want to charge you! It's on your car registration card (mulkiya). If you don't have that on hand you can enter an approximate date - but beware that your final price could change.">
+                      <div class="form-row">
+                        <div class="col">
+                          <label for="car_value">First name</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="f_name" id="f_name">
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <label for="car_value">Last name</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" name="l_name" id="l_name">
+                            <div class="validation"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
+                      <label for="car_value">Username or Email</label>
+                      <div class="input-group mb-2">
+                        <input type="text" class="form-control" name="username" id="username">
+                      </div>
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
+                      <label for="car_value">Phone</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" name="phone" id="phone">
+                      </div>
+                      <div class="validation"></div>
+                    </div>
+                    <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
+                      <label for="car_value">Password</label>
+                      <div class="input-group">
+                        <input type="password" class="form-control" name="password" id="password">
+                        <div class="validation"></div>
+                      </div>
+                    </div>
+                    <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
+                      <label class="checkbox-label with-label" for="roadside_assistance">
+                        <input class="add-to-checkout" type="checkbox" name="roadside_assistance" id="roadside_assistance" value="50" user-data="summary-checkout-amount" />
+                        <span class="checkbox-custom circular"></span> </label>
+                      <span>Keep me signed in</span>
+                    </div>
+                    <input type="submit" class="btn" name="signin" id="signin" value="Sign in">
+                    <div class="social-login d-flex flex-column justify-content-center align-items-center">
+                      <p>Or sign in with</p>
+                      <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 col-md-6 d-none d-lg-block">
+                <img src="img/animation/animation-7.gif" alt="animation" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- #sign up modal -->
+
+    <!--==========================
+    Intro Section
+  ============================-->
+    <main id="motor_insurance">
+
+      <!--==========================
+   Insurance Intro Section
+  ============================-->
+      <section id="motor_insurance_intro" class="clearfix main_section">
+        <div class="container">
+          <header class="inner-page-section-header text-center">
+            <h2>GET CAR INSURANCE QUOTE</h2>
+          </header>
+        </div>
+      </section>
+      <!-- #motor_insurance_intro -->
+
+      <!--==========================
+   Insurance Form Section
+  ============================-->
+      <section id="motor_insurance_form" class="clearfix">
+        <div class="container">
+          <div class="row row-content">
+            <div class="col-lg-2 d-none d-lg-block"></div>
+            <div class="col-xl-8 col-lg-8 col-md-8 main-content">
+              <form action="driver-form.html" method="post" id="motor_form">
+                <p class="primary-color-text sub-title">Tell us about your car</p>
+                <!--                <div class="form-group mt-4 mb-4 clearfix tooltipster" title="The year your car was manufactured. You can also find this on the car's gold registration card or 'mulkiya'. It's in the top left hand corner - 'model'.">
+                                  <label for="car_year">Car Year</label>
+                                  <select name="car_year" id="car_year" data-validation="required" data-validation-error-msg="Please select car year">
+                                    <option value="">---</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                  </select>
+                                </div>-->
+                <div class="form-group mt-4 mb-4 clearfix"> Is your car brand new?
+                  <div class="button-wrap">
+                    <input class="hidden radio-label yes_val" type="radio" name="car_brand_new" id="car_brand_new_yes" value="yes" checked="checked" user-data="car_brand_new_relative policy_car_already_expired_relative" user-data-action="hide" />
+                    <label class="button-label" for="car_brand_new_yes">
+                      <p>Yes</p>
+                    </label>
+                    <input class="hidden radio-label no_val" type="radio" name="car_brand_new" id="car_brand_new_no" value="no"  user-data="car_brand_new_relative" user-data-action="show" />
+                    <label class="button-label" for="car_brand_new_no">
+                      <p>No</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix"> Are you buying your first Car?
+                  <div class="button-wrap">
+                    <input class="hidden radio-label yes_val" type="radio" name="first_car_buy" id="first_car_buy_yes" value="yes" checked="checked"/>
+                    <label class="button-label" for="first_car_buy_yes">
+                      <p>Yes</p>
+                    </label>
+                    <input class="hidden radio-label no_val" type="radio" name="first_car_buy" id="first_car_buy_no" value="no"  />
+                    <label class="button-label" for="first_car_buy_no">
+                      <p>No</p>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix">
+                  <label for="car_make">Make</label>
+                  <select name="car_make" id="car_make" data-validation="required" data-validation-error-msg="Please select car make">
+                    <option value="">---</option>
+                    <option value="123">Alfa Romeo</option>
+                    <option value="124">Aston Martin</option>
+                    <option value="125">Audi</option>
+                    <option value="127">BMW</option>
+                    <option value="126">Bentley</option>
+                    <option value="184">Bugatti</option>
+                    <option value="128">Cadillac</option>
+                    <option value="129">Chevrolet</option>
+                    <option value="130">Chrysler</option>
+                    <option value="174">Citroen</option>
+                    <option value="132">Dodge</option>
+                    <option value="133">Ferrari</option>
+                    <option value="134">Ford</option>
+                  </select>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix">
+                  <label for="car_model">Model</label>
+                  <select name="car_model" id="car_model" data-validation="required" data-validation-error-msg="Please select car model">
+                    <option value="">---</option>
+                    <option value="4">4C </option>
+                    <option value="6">Giulia </option>
+                    <option value="7">Giulietta</option>
+                    <option value="9">Mito</option>
+                    <option value="11">Stelvio</option>
+                  </select>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix tooltipster" title="This is the sub model - choose from the selection. Make sure to get it right as it can affect your valuation and insurance price.">
+                  <label for="car_model_details">Model Details</label>
+                  <select name="car_model_details" id="car_model_details" data-validation="required" data-validation-error-msg="Please select car model details">
+                    <option value="">---</option>
+                    <option value="43508">2.0TC Base</option>
+                    <option value="43509">2.0TC Super</option>
+                    <option value="43510">2.0TC Veloce</option>
+                    <option value="43291">QV 2.9TC V6 4WD</option>
+                  </select>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
+                  <label for="car_value">What is the value of your car?</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">AED</div>
+                    </div>
+                    <input type="text" class="form-control" name="car_value" id="car_value">
+                  </div>
+                </div>
+                <div class="price_estimation_container clearfix tooltipster" title="This value range is a guide, and is subject to approval from your chosen insurance company. If the insurer does not accept your valuation, your premium may need to be adjusted.">
+                  <p>We estimate that your car value is<br>
+                    <span>119,000 AED</span> to <span>152,600 AED</span></p>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix" data-toggle="tooltipster" data-placement="right" title="We know this question is a pain - but the insurers need it to calculate the price they want to charge you! It's on your car registration card (mulkiya). If you don't have that on hand you can enter an approximate date - but beware that your final price could change.">
+                  <label for="car_first_registered">When was your car first registered?</label>
+                  <div class="form-row">
+                    <div class="col">
+                      <select name="car_first_registered_year" id="car_first_registered_year">
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select name="car_first_registered_month" id="car_first_registered_month">
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select name="car_first_registered_day" id="car_first_registered_day">
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix">
+                  <label for="car_city_register">In which city do you want to register this car?</label>
+                  <select name="car_city_register" id="car_city_register" data-validation="required" data-validation-error-msg="Please select the city where you register your car">
+                    <option value="">---</option>
+                    <option value="1" selected="selected">Dubai</option>
+                    <option value="2">Sharjah</option>
+                    <option value="3">Abu Dhabi</option>
+                    <option value="4">Ajman</option>
+                    <option value="5">Ras Al Khaimah</option>
+                    <option value="6">Fujairah</option>
+                    <option value="7">Umm Al Quwain</option>
+                    <option value="28">Al Ain</option>
+                  </select>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix tooltipster" title="Cars built for the GCC are made specially to withstand the hot and dusty environment. Only select 'No' if the car was imported privately or has been modified after sale. This can affect the number of quotes you get!"> Is this car GCC spec AND unmodified?
+                  <div class="button-wrap">
+                    <input class="hidden radio-label yes_val" type="radio" name="car_gcc_spec" id="car_gcc_spec_yes" value="yes" checked="checked" />
+                    <label class="button-label" for="car_gcc_spec_yes">
+                      <p>Yes</p>
+                    </label>
+                    <input class="hidden radio-label no_val" type="radio" name="car_gcc_spec" id="car_gcc_spec_no" value="no" />
+                    <label class="button-label" for="car_gcc_spec_no">
+                      <p>No</p>
+                    </label>
+                  </div>
+                </div>
+                <!--                <div class="form-group mt-4 mb-4 clearfix car_brand_new_relative tooltipster" title="Fully Comprehensive means that if you are involved in an accident, repairs for your car and for other cars will be covered even when the accident is your fault. The insurer will check this, so if you are unsure, have a quick look at your current policy document."> Is the current policy of this car fully comprehensive?
+                                  <div class="button-wrap">
+                                    <input class="hidden radio-label yes_val" type="radio" name="policy_car_fully_comprehensive" id="policy_car_fully_comprehensive_yes" value="yes" checked="checked" />
+                                    <label class="button-label" for="policy_car_fully_comprehensive_yes">
+                                      <p>Yes</p>
+                                    </label>
+                                    <input class="hidden radio-label no_val" type="radio" name="policy_car_fully_comprehensive" id="policy_car_fully_comprehensive_no" value="no" />
+                                    <label class="button-label" for="policy_car_fully_comprehensive_no">
+                                      <p>No</p>
+                                    </label>
+                                  </div>
+                                </div>-->
+                <!--                <div class="form-group mt-4 mb-4 clearfix car_brand_new_relative tooltipster" title="Agency repair means that your car will be repaired by it's official manufacturer at their shop. If you have non-agency repair that's ok, the insurer still has to repair your car - each one has a list of approved garages."> Does the current policy of this car include agency repair?
+                                  <div class="button-wrap">
+                                    <input class="hidden radio-label yes_val" type="radio" name="policy_car_include_agency_repair" id="policy_car_include_agency_repair_yes" value="yes" checked="checked" />
+                                    <label class="button-label" for="policy_car_include_agency_repair_yes">
+                                      <p>Yes</p>
+                                    </label>
+                                    <input class="hidden radio-label no_val" type="radio" name="policy_car_include_agency_repair" id="policy_car_include_agency_repair_no" value="no" />
+                                    <label class="button-label" for="policy_car_include_agency_repair_no">
+                                      <p>No</p>
+                                    </label>
+                                  </div>
+                                </div>-->
+                <!--                <div class="form-group mt-4 mb-4 clearfix car_brand_new_relative tooltipster" title="This can affect whether insurers will quote you at all, so make sure you renew before your current policy expires! If your policy has expired it just means that we might need some extra documents from you, or you might need to go for a survey."> Has the current policy of this car already expired?
+                                  <div class="button-wrap">
+                                    <input class="hidden radio-label yes_val" type="radio" name="policy_car_already_expired" id="policy_car_already_expired_yes" value="yes" user-data="policy_car_already_expired_relative" default-checked="0" user-data-action="show" />
+                                    <label class="button-label" for="policy_car_already_expired_yes">
+                                      <p>Yes</p>
+                                    </label>
+                                    <input class="hidden radio-label no_val" type="radio" name="policy_car_already_expired" id="policy_car_already_expired_no" value="no" checked="checked" user-data="policy_car_already_expired_relative" default-checked="1" user-data-action="hide" />
+                                    <label class="button-label" for="policy_car_already_expired_no">
+                                      <p>No</p>
+                                    </label>
+                                  </div>
+                                </div>-->
+                <div class="form-group mt-4 mb-4 clearfix policy_car_already_expired_relative hidden tooltipster" title="Find this on your policy document. Your insurer will require extra information to issue your policy. This may include photographs of your car, your RTA passing certificate and - in some cases - they may need to inspect your car.">
+                  <label for="car_policy_expired">When did your policy expire?</label>
+                  <div class="form-row">
+                    <div class="col">
+                      <select name="policy_expired_year" id="policy_expired_year">
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select name="policy_expired_month" id="policy_expired_month">
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select name="policy_expired_day" id="policy_expired_day">
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group mt-4 mb-4 clearfix text-center">
+                  <input type="submit" name="submit_insurance_data_form" id="submit_insurance_data_form" value="Get a Quote" class="btn submit-btn">
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-2 d-none d-lg-block"></div>
+          </div>
+        </div>
+      </section>
+      <!-- #motor_insurance_form -->
+
+      <!--==========================
+           Accordion Section
+         ============================-->
+
+      <section id="accordion" class="inner-section-title mb-5 clearfix">
+        <div class="container">
+          <header class="inner-page-section-header">
+            <h3>KNOW MORE ABOUT YOUR INSURANCE</h3>
+          </header>
+          <div class="row row-content">
+            <div class="col-lg-2 d-none d-lg-block"></div>
+            <div class="col-xl-8 col-lg-8 col-md-8 main-content">
+              <div class="faq-container">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">What is car insurance?</h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body"> Basic personal auto insurance is mandated by most states and provides you with some financial protection in case of an accident. But is it enough? What are the options? Learn how car insurance works and what types of coverage are available. </div>
+                </div>
+              </div>
+              <!-- .faq-container -->
+              <div class="faq-container">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">What Comprehensive car insurance covers? </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body"> Comprehensive insurance is a coverage that helps pay to replace or repair your vehicle if it's stolen or damaged in an incident that's not a collision. Comprehensive, sometimes called "other than collision" coverage, typically covers damage from fire, vandalism or falling objects (like a tree or hail). If you're financing or leasing your car, your lender likely requires comprehensive coverage. If you own your vehicle outright, it's an optional coverage on your car insurance policy. </div>
+                </div>
+              </div>
+              <!-- .faq-container -->
+              <div class="faq-container">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">What TPL car insurance covers?</h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body"> Third-party liability coverage is the portion of an insurance policy that protects you if you’re sued (or threatened to be sued) for a physical injury or damage to someone else’s property. Also referred to as “legal liability coverage,” this section of your home or car insurance policy is set up to cover things like legal fees, the amount of money you have to pay to settle a lawsuit, and other related expenses. </div>
+                </div>
+              </div>
+              <!-- .faq-container -->
+              <div class="faq-container">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Shouldn't I just buy direct from the insurers?</h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body"> Direct Purchase Insurance (DPI) are term and whole life insurance products that you can buy directly from a life insurance company, without paying a financial advisory (FA) representative.<br>
+                    <br>
+                    As DPI is sold without financial advice, no commission is charged, and you pay lower premiums as a result. The broadly standardised features also make it easier for you to compare products when deciding which DPI to purchase. </div>
+                </div>
+              </div>
+              <!-- .faq-container -->
+            </div>
+            <div class="col-lg-2 d-none d-lg-block"></div>
+          </div>
+        </div>
+      </section>
+      <!-- #accordion -->
+
+      <!--==========================
+    Boxes Section
+  ============================-->
+      <section id="motor_insurance_boxes" class="insurance_boxes">
+        <div class="container">
+          <div class="row flex-items-xs-middle flex-items-xs-center cards_container">
+            <div class="col-lg-2 d-none d-lg-block"></div>
+            <div class="col-xs-12 col-lg-4 col-md-6 wow fadeInLeft" data-wow-duration="1s">
+              <div class="card">
+                <div class="card-icon"><img src="img/insurance_form_page_icon_1.png" alt="card" class="img-fluid"></div>
+                <div class="card-block">
+                  <h4 class="card-title"> SHOP AROUND </h4>
+                  <p>You could save a lotwhen you search and compare with Insuredoo</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-lg-4 col-md-6 wow fadeInRight" data-wow-duration="1s">
+              <div class="card">
+                <div class="card-icon"><img src="img/insurance_form_page_icon_2.png" alt="card" class="img-fluid"></div>
+                <div class="card-block">
+                  <h4 class="card-title"> PAY INSTALLMENTS </h4>
+                  <p>you can pay yourinsurance in Installments with 0% interest</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 d-none d-lg-block"></div>
+          </div>
+          <!-- .cards_container -->
+        </div>
+        <!-- .container -->
+
+      </section>
+      <!-- #insurance_boxes -->
+
+    </main>
+    <!-- #motor_insurance -->
+
+    <!--==========================
+    Footer
+  ============================-->
+    <footer id="footer" class="section-bg">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="footer-newsletter">
+                <h2 class="pb-3">NEWSLETTER</h2>
+                <form action="index.html" method="post" class="newsletterForm">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="newsletter_email" id="newsletter_email" placeholder="Your Email" data-rule="email" data-validation="required email" data-validation-error-msg="Please enter a valid email" />
+                    <div class="validation"></div>
+                  </div>
+                  <div id="sendmessage">Your message has been sent. Thank you!</div>
+                  <input type="submit" class="form-control" value="Subscribe">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="footer-info"> <img src="img/logo_white.png" alt="Insuredoo,The Easiest Way To Insure" class="img-fluid">
+                <p>Why I say old chap that is sping lavatory chip shop gosh off his, smashing boot are you taking the piss posh loo brilliant matie boy young.!!</p>
+              </div>
+              <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer_links_separator">
+              <div class="footer-links">
+                <ul>
+                  <li><a href="motor.html">Motor Insurance</a></li>
+                  <li><a href="home.html">Property Insurance</a></li>
+                  <li><a href="index.html">Medical Insurance</a></li>
+                  <li><a href="travel.html">Travel Insurance</a></li>
+                  <li><a href="index.html">Mobile Insurance</a></li>
+                  <li><a href="life.html">Life Insurance</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 footer_links_separator">
+              <div class="footer-links">
+                <ul>
+                  <li><a href="index.html">Pet Insurance</a></li>
+                  <li><a href="index.html">GAP Insurance</a></li>
+                  <li><a href="index.html">Blogs</a></li>
+                  <li><a href="index.html">Claims</a></li>
+                  <li><a href="index.html">About Insuredoo</a></li>
+                  <li><a href="index.html">Privacy Policy</a></li>
+                  <li><a href="index.html">Terms of Service</a></li>
+                  <li><a href="index.html">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright"> &copy; Copyright 2020 Insuredoo </div>
+      </div>
+    </footer>
+    <!-- #footer -->
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/js/jquery.min.js"></script>
+    <script src="lib/jquery/js/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/js/easing.min.js"></script>
+    <script src="lib/mobile-nav/js/mobile-nav.js"></script>
+    <script src="lib/wow/js/wow.min.js"></script>
+    <script src="lib/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="lib/fancybox/js/jquery.fancybox.min.js"></script>
+    <script src="lib/validation/js/jquery.form-validator.min.js"></script>
+    <script src="lib/form/js/select2.min.js"></script>
+    <script src="lib/tooltip/js/tooltipster.bundle.min.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+      var monthNames = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+      var qntYears = 20;
+      var selectYear = $("#car_first_registered_year");
+      var selectMonth = $("#car_first_registered_month");
+      var selectDay = $("#car_first_registered_day");
+      var currentYear = new Date().getFullYear();
+      generate_date_list(monthNames, qntYears, selectYear, selectMonth, selectDay, currentYear, 0, "desc");
+      var qntYears = 2;
+      var selectYear = $("#policy_expired_year");
+      var selectMonth = $("#policy_expired_month");
+      var selectDay = $("#policy_expired_day");
+      generate_date_list(monthNames, qntYears, selectYear, selectMonth, selectDay, currentYear, 0, "desc");
+
+    </script>
+  </body>
+
+</html>
