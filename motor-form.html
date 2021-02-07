@@ -84,9 +84,9 @@
                   <div class="form-header">
                     <p>New user? <span class="primary-color-text create-account" data-toggle="modal" data-target="#signup-modal">Create an account</span></p>
                     <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
-                      <label for="car_value">Username or Email</label>
+                      <label for="car_value">Email</label>
                       <div class="input-group mb-2">
-                        <input type="text" class="form-control" name="username" id="username">
+                        <input type="email" class="form-control" name="username" id="username">
                       </div>
                       <div class="validation">Validation message goes here..</div>
                     </div>
@@ -106,7 +106,7 @@
                     <input type="submit" class="btn" name="signin" id="signin" value="Sign in">
                     <div class="social-login d-flex flex-column justify-content-center align-items-center">
                       <p>Or sign in with</p>
-                      <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                      <div class="social-links"> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  <a href="#" class="google"><i class="fa fa-google"></i></a> </div>
                     </div>
                   </div>
                 </form>
@@ -157,9 +157,9 @@
                       </div>
                     </div>
                     <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
-                      <label for="car_value">Username or Email</label>
+                      <label for="car_value">Email</label>
                       <div class="input-group mb-2">
-                        <input type="text" class="form-control" name="username" id="username">
+                        <input type="email" class="form-control" name="username" id="username">
                       </div>
                       <div class="validation"></div>
                     </div>
@@ -186,7 +186,7 @@
                     <input type="submit" class="btn" name="signin" id="signin" value="Sign in">
                     <div class="social-login d-flex flex-column justify-content-center align-items-center">
                       <p>Or sign in with</p>
-                      <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                      <div class="social-links"> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  <a href="#" class="google"><i class="fa fa-google"></i></a> </div>
                     </div>
                   </div>
                 </form>
@@ -230,23 +230,23 @@
             <div class="col-xl-8 col-lg-8 col-md-8 main-content">
               <form action="driver-form.html" method="post" id="motor_form">
                 <p class="primary-color-text sub-title">Tell us about your car</p>
-                <!--                <div class="form-group mt-4 mb-4 clearfix tooltipster" title="The year your car was manufactured. You can also find this on the car's gold registration card or 'mulkiya'. It's in the top left hand corner - 'model'.">
-                                  <label for="car_year">Car Year</label>
-                                  <select name="car_year" id="car_year" data-validation="required" data-validation-error-msg="Please select car year">
-                                    <option value="">---</option>
-                                    <option value="2020">2020</option>
-                                    <option value="2019">2019</option>
-                                    <option value="2018">2018</option>
-                                    <option value="2017">2017</option>
-                                    <option value="2016">2016</option>
-                                    <option value="2015">2015</option>
-                                    <option value="2014">2014</option>
-                                    <option value="2013">2013</option>
-                                    <option value="2012">2012</option>
-                                    <option value="2011">2011</option>
-                                    <option value="2010">2010</option>
-                                  </select>
-                                </div>-->
+                <div class="form-group mt-4 mb-4 clearfix tooltipster" title="The year your car was manufactured. You can also find this on the car's gold registration card or 'mulkiya'. It's in the top left hand corner - 'model'.">
+                  <label for="car_year">Car Year</label>
+                  <select name="car_year" id="car_year" data-validation="required" data-validation-error-msg="Please select car year">
+                    <option value="">---</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                  </select>
+                </div>
                 <div class="form-group mt-4 mb-4 clearfix"> Is your car brand new?
                   <div class="button-wrap">
                     <input class="hidden radio-label yes_val" type="radio" name="car_brand_new" id="car_brand_new_yes" value="yes" checked="checked" user-data="car_brand_new_relative policy_car_already_expired_relative" user-data-action="hide" />
@@ -367,18 +367,18 @@
                     </label>
                   </div>
                 </div>
-                <!--                <div class="form-group mt-4 mb-4 clearfix car_brand_new_relative tooltipster" title="Fully Comprehensive means that if you are involved in an accident, repairs for your car and for other cars will be covered even when the accident is your fault. The insurer will check this, so if you are unsure, have a quick look at your current policy document."> Is the current policy of this car fully comprehensive?
-                                  <div class="button-wrap">
-                                    <input class="hidden radio-label yes_val" type="radio" name="policy_car_fully_comprehensive" id="policy_car_fully_comprehensive_yes" value="yes" checked="checked" />
-                                    <label class="button-label" for="policy_car_fully_comprehensive_yes">
-                                      <p>Yes</p>
-                                    </label>
-                                    <input class="hidden radio-label no_val" type="radio" name="policy_car_fully_comprehensive" id="policy_car_fully_comprehensive_no" value="no" />
-                                    <label class="button-label" for="policy_car_fully_comprehensive_no">
-                                      <p>No</p>
-                                    </label>
-                                  </div>
-                                </div>-->
+                <div class="form-group mt-4 mb-4 clearfix car_brand_new_relative tooltipster" title="Fully Comprehensive means that if you are involved in an accident, repairs for your car and for other cars will be covered even when the accident is your fault. The insurer will check this, so if you are unsure, have a quick look at your current policy document."> Is the current policy of this car fully comprehensive?
+                  <div class="button-wrap">
+                    <input class="hidden radio-label yes_val" type="radio" name="policy_car_fully_comprehensive" id="policy_car_fully_comprehensive_yes" value="yes" checked="checked" />
+                    <label class="button-label" for="policy_car_fully_comprehensive_yes">
+                      <p>Yes</p>
+                    </label>
+                    <input class="hidden radio-label no_val" type="radio" name="policy_car_fully_comprehensive" id="policy_car_fully_comprehensive_no" value="no" />
+                    <label class="button-label" for="policy_car_fully_comprehensive_no">
+                      <p>No</p>
+                    </label>
+                  </div>
+                </div>
                 <!--                <div class="form-group mt-4 mb-4 clearfix car_brand_new_relative tooltipster" title="Agency repair means that your car will be repaired by it's official manufacturer at their shop. If you have non-agency repair that's ok, the insurer still has to repair your car - each one has a list of approved garages."> Does the current policy of this car include agency repair?
                                   <div class="button-wrap">
                                     <input class="hidden radio-label yes_val" type="radio" name="policy_car_include_agency_repair" id="policy_car_include_agency_repair_yes" value="yes" checked="checked" />
@@ -391,18 +391,18 @@
                                     </label>
                                   </div>
                                 </div>-->
-                <!--                <div class="form-group mt-4 mb-4 clearfix car_brand_new_relative tooltipster" title="This can affect whether insurers will quote you at all, so make sure you renew before your current policy expires! If your policy has expired it just means that we might need some extra documents from you, or you might need to go for a survey."> Has the current policy of this car already expired?
-                                  <div class="button-wrap">
-                                    <input class="hidden radio-label yes_val" type="radio" name="policy_car_already_expired" id="policy_car_already_expired_yes" value="yes" user-data="policy_car_already_expired_relative" default-checked="0" user-data-action="show" />
-                                    <label class="button-label" for="policy_car_already_expired_yes">
-                                      <p>Yes</p>
-                                    </label>
-                                    <input class="hidden radio-label no_val" type="radio" name="policy_car_already_expired" id="policy_car_already_expired_no" value="no" checked="checked" user-data="policy_car_already_expired_relative" default-checked="1" user-data-action="hide" />
-                                    <label class="button-label" for="policy_car_already_expired_no">
-                                      <p>No</p>
-                                    </label>
-                                  </div>
-                                </div>-->
+                <div class="form-group mt-4 mb-4 clearfix car_brand_new_relative tooltipster" title="This can affect whether insurers will quote you at all, so make sure you renew before your current policy expires! If your policy has expired it just means that we might need some extra documents from you, or you might need to go for a survey."> Has the current policy of this car already expired?
+                  <div class="button-wrap">
+                    <input class="hidden radio-label yes_val" type="radio" name="policy_car_already_expired" id="policy_car_already_expired_yes" value="yes" user-data="policy_car_already_expired_relative" default-checked="0" user-data-action="show" />
+                    <label class="button-label" for="policy_car_already_expired_yes">
+                      <p>Yes</p>
+                    </label>
+                    <input class="hidden radio-label no_val" type="radio" name="policy_car_already_expired" id="policy_car_already_expired_no" value="no" checked="checked" user-data="policy_car_already_expired_relative" default-checked="1" user-data-action="hide" />
+                    <label class="button-label" for="policy_car_already_expired_no">
+                      <p>No</p>
+                    </label>
+                  </div>
+                </div>
                 <div class="form-group mt-4 mb-4 clearfix policy_car_already_expired_relative hidden tooltipster" title="Find this on your policy document. Your insurer will require extra information to issue your policy. This may include photographs of your car, your RTA passing certificate and - in some cases - they may need to inspect your car.">
                   <label for="car_policy_expired">When did your policy expire?</label>
                   <div class="form-row">
