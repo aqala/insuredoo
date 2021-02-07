@@ -81,9 +81,9 @@
                   <div class="form-header">
                     <p>New user? <span class="primary-color-text create-account" data-toggle="modal" data-target="#signup-modal">Create an account</span></p>
                     <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
-                      <label for="car_value">Username or Email</label>
+                      <label for="car_value">Email</label>
                       <div class="input-group mb-2">
-                        <input type="text" class="form-control" name="username" id="username">
+                        <input type="email" class="form-control" name="username" id="username">
                       </div>
                       <div class="validation">Validation message goes here..</div>
                     </div>
@@ -103,7 +103,7 @@
                     <input type="submit" class="btn" name="signin" id="signin" value="Sign in">
                     <div class="social-login d-flex flex-column justify-content-center align-items-center">
                       <p>Or sign in with</p>
-                      <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                      <div class="social-links"> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  <a href="#" class="google"><i class="fa fa-google"></i></a> </div>
                     </div>
                   </div>
                 </form>
@@ -154,9 +154,9 @@
                       </div>
                     </div>
                     <div class="form-group mt-2 mb-2 clearfix tooltipster" title="Enter what you believe is the current resale value. Remember to consider depreciation, and that this value will be subject to insurer approval. We have provided an estimation below to help. Remember that a higher valuation means a higher insurance price. The value is only relevant if your car is a total write-off.">
-                      <label for="car_value">Username or Email</label>
+                      <label for="car_value">Email</label>
                       <div class="input-group mb-2">
-                        <input type="text" class="form-control" name="username" id="username">
+                        <input type="email" class="form-control" name="username" id="username">
                       </div>
                       <div class="validation"></div>
                     </div>
@@ -183,7 +183,7 @@
                     <input type="submit" class="btn" name="signin" id="signin" value="Sign in">
                     <div class="social-login d-flex flex-column justify-content-center align-items-center">
                       <p>Or sign in with</p>
-                      <div class="social-links"> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a> <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> </div>
+                      <div class="social-links"> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>  <a href="#" class="google"><i class="fa fa-google"></i></a> </div>
                     </div>
                   </div>
                 </form>
@@ -213,63 +213,127 @@
       </section>
       <!-- #about_insuredoo_header -->
 
-      <section id="blog">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12 col-lg-12 wow fadeInRight blog-2-carousel-container" data-wow-duration="1s" data-wow-delay="1.4s"> <img src="img/blog-bg.png" alt="blog" class="bg-slider img-fluid d-none d-md-block">
-              <div class="owl-carousel blog-2-carousel">
-                <div class="blog-2-item"> <img src="img/blog-text-img.png" alt="blog" class="img-fluid">
-                  <h4>Lorem ipsum 1</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </p>
-                  <a href="/blogs-detailed.html" class="btn">Read More</a>
-                </div>
-                <div class="blog-2-item"> <img src="img/blog-text-img.png" alt="blog" class="img-fluid">
-                  <h4>Lorem ipsum 2</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </p>
-                  <a href="/blogs-detailed.html" class="btn">Read More</a>
-                </div>
-                <div class="blog-2-item"> <img src="img/blog-text-img.png" alt="blog" class="img-fluid">
-                  <h4>Lorem ipsum 3</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </p>
-                  <a href="/blogs-detailed.html" class="btn">Read More</a>
-                </div>
-                <div class="blog-2-item"> <img src="img/blog-text-img.png" alt="blog" class="img-fluid">
-                  <h4>Lorem ipsum 4</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna </p>
-                  <a href="/blogs-detailed.html" class="btn">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="blogs-landingpage">
         <div class="container">
-          <div class="items">
-            <div class="row">
-              <div class="col-lg-4 col-md-4 order-md-last order-first wow fadeInRight"><img src="img/animation/animation-5.gif" alt="animation" class="img-fluid"></div>
-              <div class="col-lg-8 col-md-8 order-md-first order-last wow fadeInLeft content-block">
-                <h4 class="h4_inner_header"><a href="/blogs-detailed.html">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at erat id nunc euismod mattis. Donec tincidunt venenatis nulla id tincidunt. Suspendisse tempor dui at consequat blandit. Pellentesque et sem sapien. Cras erat arcu, mollis a facilisis in, aliquet eu sem. Nulla in massa turpis. Mauris volutpat et massa id interdum.</p>
+          <ul class="categories-filter-inline d-flex flex-row justify-content-center">
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+          </ul>
+          <div class="items row">
+            <div class="item">
+              <div class="top">
+                <a href="/blogs-detailed.html">
+                  <img src="img/blog-text-img.png">
+                </a>
+              </div>
+              <div class="bottom">
+                <div class="category-date d-flex flex-row">
+                  <div class="category"><strong>Category 1</strong></div> | <div class="date"><strong>Date</strong></div>
+                </div>
+                <h3><a href="/blogs-detailed.html">is simply dummy text of the printing</a></h3>
+                <p>is simply dummy text of 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
               </div>
             </div>
-            <div class="row inner_row">
-              <div class="col-lg-4 col-md-4 wow fadeInLeft" data-wow-delay="0.5s"><img src="img/animation/animation-7.gif" alt="animation" class="img-fluid"></div>
-              <div class="col-lg-8 col-md-8 wow fadeInRight content-block" data-wow-delay="0.5s">
-                <h4 class="h4_inner_header"><a href="/blogs-detailed.html">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.</a></h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at erat id nunc euismod mattis. Donec tincidunt venenatis nulla id tincidunt. Suspendisse tempor dui at consequat blandit. Pellentesque et sem sapien. Cras erat arcu, mollis a facilisis in, <strong>aliquet eu sem.</strong> Nulla in massa turpis. Mauris volutpat et massa id interdum.</p>
+            <div class="item">
+              <div class="top">
+                <a href="/blogs-detailed.html">
+                  <img src="img/blog-text-img.png">
+                </a>
+              </div>
+              <div class="bottom">
+                <div class="category-date d-flex flex-row">
+                  <div class="category"><strong>Category 1</strong></div> | <div class="date"><strong>Date</strong></div>
+                </div>
+                <h3><a href="/blogs-detailed.html">is simply dummy text of the printing</a></h3>
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
               </div>
             </div>
-            <div class="row inner_row">
-              <div class="col-lg-4 col-md-4 order-md-last order-first wow fadeInRight"><img src="img/animation/animation-6.gif" alt="animation" class="img-fluid"></div>
-              <div class="col-lg-8 col-md-8 order-md-first order-last wow fadeInLeft content-block">
-                <h4 class="h4_inner_header"><a href="/blogs-detailed.html">LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.</a></h4>
-                <p>To ensure that our customers get the most out of their insurance, the best possible customer experience, and the best rates & coverage. We are proud of our customer-centric focus, and the elegant apps we build to better serve our customers. We’re here to build a modern, fair and sustainable insurance provider.<br>
-                  <br>
-                  We use technology to make getting insurance easy & equitable, and are here to make sure you get the advice and guidance you need.</p>
+            <div class="item">
+              <div class="top">
+                <a href="/blogs-detailed.html">
+                  <img src="img/blog-text-img.png">
+                </a>
+              </div>
+              <div class="bottom">
+                <div class="category-date d-flex flex-row">
+                  <div class="category"><strong>Category 1</strong></div> | <div class="date"><strong>Date</strong></div>
+                </div>
+                <h3><a href="/blogs-detailed.html">is simply dummy text of the printing</a></h3>
+                <p>is simply dummy text of the been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
               </div>
             </div>
+            <div class="item">
+              <div class="top">
+                <a href="/blogs-detailed.html">
+                  <img src="img/blog-text-img.png">
+                </a>
+              </div>
+              <div class="bottom">
+                <div class="category-date d-flex flex-row">
+                  <div class="category"><strong>Category 1</strong></div> | <div class="date"><strong>Date</strong></div>
+                </div>
+                <h3><a href="/blogs-detailed.html">is simply dummy text of the printing</a></h3>
+                <p>is simply dummy text of the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <a href="/blogs-detailed.html">
+                  <img src="img/blog-text-img.png">
+                </a>
+              </div>
+              <div class="bottom">
+                <div class="category-date d-flex flex-row">
+                  <div class="category"><strong>Category 1</strong></div> | <div class="date"><strong>Date</strong></div>
+                </div>
+                <h3><a href="/blogs-detailed.html">is simply dummy text of the printing</a></h3>
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <a href="/blogs-detailed.html">
+                  <img src="img/blog-text-img.png">
+                </a>
+              </div>
+              <div class="bottom">
+                <div class="category-date d-flex flex-row">
+                  <div class="category"><strong>Category 1</strong></div> | <div class="date"><strong>Date</strong></div>
+                </div>
+                <h3><a href="/blogs-detailed.html">is simply dummy text of the printing</a></h3>
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <a href="/blogs-detailed.html">
+                  <img src="img/blog-text-img.png">
+                </a>
+              </div>
+              <div class="bottom">
+                <div class="category-date d-flex flex-row">
+                  <div class="category"><strong>Category 1</strong></div> | <div class="date"><strong>Date</strong></div>
+                </div>
+                <h3><a href="/blogs-detailed.html">is simply dummy text of the printing</a></h3>
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              </div>
+            </div>
+            <div class="item">
+              <div class="top">
+                <a href="/blogs-detailed.html">
+                  <img src="img/blog-text-img.png">
+                </a>
+              </div>
+              <div class="bottom">
+                <div class="category-date d-flex flex-row">
+                  <div class="category"><strong>Category 1</strong></div> | <div class="date"><strong>Date</strong></div>
+                </div>
+                <h3><a href="/blogs-detailed.html">is simply dummy text of the printing</a></h3>
+                <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> 
+              </div>
+            </div>
+            
           </div>
         </div>
         <div class="pager view-more">
@@ -277,44 +341,6 @@
         </div>
       </section>
       <!-- #about_insuredoo -->
-
-      <section id="our_values">
-        <div class="container">
-          <header class="section-header wow fadeInUp" data-wow-duration="1s">
-            <h2>OUR VALUES</h2>
-          </header>
-          <div class="row flex-items-xs-middle flex-items-xs-center cards_container">
-            <div class="col-xs-12 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-              <div class="card">
-                <div class="card-icon"><img src="img/our_values_icon_1.png" alt="card" class="img-fluid"> </div>
-                <div class="card-block">
-                  <h4 class="card-title"> TRUST </h4>
-                  <p>We are the trusted advisors to our customers when it comes to insurance. We aim to educate and deliver peace of mind with our expertise in the financial sphere.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-              <div class="card">
-                <div class="card-icon"><img src="img/our_values_icon_2.png" alt="card" class="img-fluid"> </div>
-                <div class="card-block">
-                  <h4 class="card-title"> EFFICIENCY </h4>
-                  <p>Our goal is to make the process of buying insurance as efficient as possible. We can then pass those efficiencies on to our customers by saving them time and money.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-              <div class="card">
-                <div class="card-icon"><img src="img/our_values_icon_3.png" alt="card" class="img-fluid"> </div>
-                <div class="card-block">
-                  <h4 class="card-title"> INNOVATION </h4>
-                  <p>We are a team of innovators, and we hold the products we craft to the highest standard. We believe in pushing the envelope in moving insurance away from it’s archaic technology.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- #our_values -->
     </main>
 
     <!--==========================
@@ -394,8 +420,10 @@
     <script src="lib/fancybox/js/jquery.fancybox.min.js"></script>
     <script src="lib/validation/js/jquery.form-validator.min.js"></script>
     <script src="lib/tooltip/js/tooltipster.bundle.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
+    
   </body>
 
 </html>

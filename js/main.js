@@ -454,6 +454,22 @@ function AdjustDays() {
         $(this).remove();
       });
     }
+
+    $(document).on('click' , '.notifications-menu .icon', function(){
+      if($('.notifications-menu .notifications').hasClass('closed')) {
+        $('.notifications-menu .notifications').removeClass('closed');
+        $('.notifications-menu .notifications').addClass('opened');
+      }else {
+        $('.notifications-menu .notifications').removeClass('opened');
+        $('.notifications-menu .notifications').addClass('closed');
+      }
+    });
+
+    $('#blogs-landingpage .items').masonry({
+      // options
+      itemSelector: '.item'
+    });
+
     $(".twitter-carousel").owlCarousel({
       autoplay: true,
       dots: true,

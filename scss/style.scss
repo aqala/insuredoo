@@ -324,6 +324,45 @@ h6 {
   -webkit-animation: slide_city 140s linear infinite
 }
 
+.notifications-menu {
+  padding: 10px 12px;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  .icon {
+    position: relative;
+    span {
+      position: absolute;
+      top: -5px;
+      font-size: 10px;
+    }
+  }
+  .notifications {
+    text-align: left;
+    box-shadow: 1px 1px 3px 0px #CCC;
+    position: absolute;
+    background: #FFF;
+    left: -165px;
+    top: 43px;
+    min-width: 200px;
+    ul {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      li {
+        padding: 5px;
+        border-bottom: 1px solid #CCC;
+      }
+    }
+    &.closed {
+      display: none;
+    }
+    &.opened {
+      display: block;
+    }
+  }
+}
+
 @-webkit-keyframes slide_city {
   from {
     background-position: 0 0
@@ -1584,6 +1623,25 @@ div.ui-tooltip {
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 600
+  }
+  .item {
+    width: 33.3%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .category-date {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.categories-filter-inline {
+  list-style: none;
+  li {
+    padding: 0 15px;
   }
 }
 
